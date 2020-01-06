@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+<style>
+body {
+  background: #1d1f20;
+}
+h2 {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  color: #2F3335;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 60px;
+  line-height: 1;
+}
+h2 p {
+  font-size: 40px;
+  line-height: 1;
+  margin: 0;
+  font-weight: normal;
+  color: #272A2B;
+}
+i {
+  display: block;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  transition: transform .3s ease-out .3s;
+  cursor: pointer;
+}
+i.prev {
+  top: calc(50% - 20px);
+  left: 40px;
+}
+i.next {
+  top: calc(50% - 20px);
+  right: 40px;
+}
+
+i:before, i:after {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #999;
+  transform-origin: 50% 100% 0;
+  transition: all .16s ease-out;
+}
+i.prev:before, i.prev:after {
+  left: 0;
+}
+i.next:before, i.next:after {
+  right: 0;
+}
+i:before {
+  top: -50%;
+}
+i:after {
+  top: calc(-50% + -1px);
+}
+i.next:after {
+  transform: rotate(-135deg);
+}
+i.next:before {
+  transform: rotate(-45deg);
+}
+i.prev:after {
+  transform: rotate(135deg);
+}
+i.prev:before {
+  transform: rotate(45deg);
+}
+i:hover:before, i:hover:after {
+  background-color: #eee;
+}
+i.next:hover:after {
+  transform: rotate(-150deg);
+}
+i.next:hover:before {
+  transform: rotate(-30deg);
+}
+i.prev:hover:after {
+  transform: rotate(150deg);
+}
+i.prev:hover:before {
+  transform: rotate(30deg);
+}
+</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="no-referrer">
+  <title>Clean Blog </title>
+  <meta name="description" content="desc">  
+
+</head>
+
+<body>
+<h2>
+SITEYE DEVAM ET 
+  <p><a target="_blank" href="adresss">title</a></p>
+</h2>
+
+<a target="_blank" href="adress"><i class="next"> 
+</i>
+ </a>
+</body>
+
+</html>
